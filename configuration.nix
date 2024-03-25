@@ -21,6 +21,9 @@
    wireless.iwd.enable = true;
   };
 
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
