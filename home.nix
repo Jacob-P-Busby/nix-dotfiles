@@ -51,7 +51,8 @@
       lls = "ls -la";
       
       kys = "shutdown now";
-    }
+    };
+  };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
