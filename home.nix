@@ -30,6 +30,7 @@
 
   home.sessionVariables = {
     EDITOR = "nvim";
+    PS1 = "Test > ";
   };
 
   programs.bash = {
@@ -43,7 +44,6 @@
     };
 
     sessionVariables = {
-      PS1 = "Test > ";
     };
   };
 
