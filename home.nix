@@ -43,7 +43,7 @@
     };
     
     bashrcExtra = {
-      "export PS1='test > '"
+      "export PS1='test > '"; # Gotta be done last :/
     };
   };
 
