@@ -30,7 +30,6 @@
 
   home.sessionVariables = {
     EDITOR = "nvim";
-    PS1 = "Test > ";
   };
 
   programs.bash = {
@@ -42,8 +41,9 @@
       
       off = "shutdown now";
     };
-
-    sessionVariables = {
+    
+    bashrcExtra = {
+      "export PS1='test > '"
     };
   };
 
