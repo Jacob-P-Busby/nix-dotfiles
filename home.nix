@@ -44,6 +44,7 @@
 
     sessionVariables = {
       PS1 = "[\t \u@\h]\$ "
+    };
   };
 
   # Let Home Manager install and manage itself.
