@@ -37,13 +37,13 @@
     shellAliases = {
       ll = "ls -l";
       la = "ls -a";
-      lls = "ls -la";
+      lla = "ls -la";
       
       off = "shutdown now";
     };
 
     sessionVariables = {
-      PS1 = "[\t \u@\h]\$ ";
+      PS1 = "Test > ";
     };
   };
 
