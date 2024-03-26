@@ -43,7 +43,7 @@
     };
 
     sessionVariables = {
-      PS1 = "[\t \u@\h]\$ "
+      PS1 = "[\t \u@\h]\$ ";
     };
   };
 
