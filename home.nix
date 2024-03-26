@@ -28,17 +28,6 @@
     # '';
   };
 
-  # Home Manager can also manage your environment variables through
-  # 'home.sessionVariables'. If you don't want to manage your shell through Home
-  # Manager then you have to manually source 'hm-session-vars.sh' located at
-  # either
-  #
-  #  ~/.nix-profile/etc/profile.d/hm-session-vars.sh
-  #
-  # or
-  #
-  #  /etc/profiles/per-user/jacob/etc/profile.d/hm-session-vars.sh
-  #
   home.sessionVariables = {
     EDITOR = "nvim";
   };
@@ -50,8 +39,11 @@
       la = "ls -a";
       lls = "ls -la";
       
-      kys = "shutdown now";
+      off = "shutdown now";
     };
+
+    sessionVariables = {
+      PS1 = "[\t \u@\h]\$ "
   };
 
   # Let Home Manager install and manage itself.
