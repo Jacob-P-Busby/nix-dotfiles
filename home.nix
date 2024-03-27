@@ -42,10 +42,6 @@
       
       off = "shutdown now";
     };
-    
-    bashrcExtra = {
-      "export PS1='test > '"; # Gotta be done last :/
-    };
   };
 
   # Let Home Manager install and manage itself.
