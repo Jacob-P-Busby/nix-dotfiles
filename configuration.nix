@@ -87,6 +87,7 @@
     btop
     hyprpaper
     rofi-wayland
+    pulseaudio-ctl
   ];
 
   # Fonts
