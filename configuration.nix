@@ -60,6 +60,7 @@
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.jacob = {
+    shell = pkgs.zsh;
     isNormalUser = true;
     description = "Jacob Busby";
     extraGroups = [ "networkmanager" "wheel" "jacob" ];
@@ -124,6 +125,7 @@
   system.stateVersion = "23.11"; # Did you read the comment?
 
   programs.hyprland.enable = true;
+  programs.zsh.enable = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 }
