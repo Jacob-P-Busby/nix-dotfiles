@@ -32,14 +32,12 @@
     EDITOR = "nvim";
   };
 
-  programs.bash = {
+  programs.zsh = {
     enable = true;
-    shellAliases = {
-      ll = "ls -l";
-      la = "ls -a";
-      lla = "ls -la";
-      
-      off = "shutdown now";
+    enableVteIntegration = true;
+    autocd = true;
+    oh-my-zsh = {
+      enable = true;
     };
   };
 
