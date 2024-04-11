@@ -82,6 +82,7 @@
     hyprpaper
     rofi-wayland
     pulseaudio-ctl
+    zsh
   ];
 
   # Fonts
