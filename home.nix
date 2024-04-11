@@ -38,6 +38,7 @@
     autocd = true;
     oh-my-zsh = {
       enable = true;
+      theme = "random";
     };
   };
 
