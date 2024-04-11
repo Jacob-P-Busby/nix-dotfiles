@@ -24,6 +24,8 @@
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
 
+  services.fstrim.enable = true;
+
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
