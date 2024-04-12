@@ -74,15 +74,10 @@
   environment.systemPackages = with pkgs; [
     vim
     wget
-    kitty
-    firefox
     git
     gnumake
-    gh
-    waybar
     neovim
     neofetch
-    libreoffice
     wireplumber
     btop
     hyprpaper
@@ -124,7 +119,6 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.11"; # Did you read the comment?
 
-  programs.hyprland.enable = true;
   programs.zsh.enable = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

@@ -12,6 +12,11 @@
   # environment.
   home.packages = with pkgs; [
     logseq
+    firefox
+    kitty
+    gh
+    waybar
+    libreoffice
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -32,6 +37,8 @@
   home.sessionVariables = {
     EDITOR = "nvim";
   };
+
+  programs.hyprland.enable = true;
 
   programs.zsh = {
     enable = true;
