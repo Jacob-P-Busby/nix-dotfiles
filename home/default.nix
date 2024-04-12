@@ -35,6 +35,12 @@
     enable = true;
     enableVteIntegration = true; # Terminal integration
     autocd = true;
+    syntaxHighlighting.enable = true;
+
+    shellAliases = {
+      off = "shutdown now";
+      home-update = "home-manager switch --flake ~/.dotfiles";
+    };
 
     # QOL
     oh-my-zsh = {
