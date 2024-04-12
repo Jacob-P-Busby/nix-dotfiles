@@ -11,13 +11,16 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    logseq
-    firefox
-    kitty
-    gh
-    waybar
-    libreoffice
-    wl-clipboard
+    # GUI
+    logseq       # Notes
+    firefox      # Browser
+    kitty        # Terminal
+    waybar       # Top Bar
+    libreoffice  # Office suite
+
+    # CL
+    wl-clipboard # Copy & Paste
+    gh           # GitHub CLI
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -39,12 +42,15 @@
     EDITOR = "nvim";
   };
 
+  # My window manager
   wayland.windowManager.hyprland = {
     enable = true;
+
+    # See https://wiki.hyprland.org for documentation
     settings = {
       monitor = [
         "eDP-1,1920x1080@60,0x0,1"
-	"HDMI-A-1,1920x1080@144,0x-1080,1"
+	"HDMI-A-1,1920x1080@144,0x-1080,1" # Home AOC monitor
 	",preferred,auto,1"
       ];
 
@@ -179,7 +185,7 @@
 	"$mainMod SHIFT, 9, movetoworkspace, 9"
 	"$mainMod SHIFT, 0, movetoworkspace, 0"
 
-	"$mainMod, X, swapactiveworkspaces, eDP-1 HDMI-A-1"
+	"$mainMod, X, swapactiveworkspaces, eDP-1 HDMI-A-1" # Switch between laptop and hdmi monitor
 
 	"$mainMod, S, togglespecialworkspace, magic"
 	"$mainMod SHIFT, S, movetoworkspace, special:magic"
@@ -191,8 +197,8 @@
       ];
 
       exec-once = [
-        "waybar"
-	"hyprpaper"
+        "waybar"    # Top bar
+	"hyprpaper" # Wallpaper utility
       ];
     };
   };
