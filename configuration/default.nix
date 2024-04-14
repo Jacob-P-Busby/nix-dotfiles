@@ -80,7 +80,6 @@
     neofetch
     wireplumber
     btop
-    hyprpaper
     rofi-wayland
     pulseaudio-ctl
     zsh

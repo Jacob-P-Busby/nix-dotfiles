@@ -17,6 +17,7 @@
     kitty        # Terminal
     waybar       # Top Bar
     libreoffice  # Office suite
+    hyprpaper    # Wallpaper utility
 
     # CL
     wl-clipboard # Copy & Paste
