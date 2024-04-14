@@ -83,8 +83,8 @@
     rofi-wayland
     pulseaudio-ctl
     zsh
+    gnupg
   ];
-
   # Fonts
   fonts.packages = with pkgs; [
     jetbrains-mono
