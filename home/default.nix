@@ -23,7 +23,6 @@
 
     # CL
     wl-clipboard # Copy & Paste
-    gh           # GitHub CLI
   ];
 
   home.file = {

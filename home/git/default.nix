@@ -8,4 +8,8 @@
       commit.gpgsign = true;
     };
   };
+
+  programs.gh = {
+    enable = true;
+  };
 }
