@@ -6,6 +6,7 @@
     extraConfig = {
       user.signingkey = "9394DCCB76F75449";
       commit.gpgsign = true;
+      push.autoSetupRemote = true;
     };
   };
 
