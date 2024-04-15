@@ -4,6 +4,7 @@
   imports = [
     ./hypr # Window manager
     ./zsh  # Primary shell
+    ./git  # Git options
   ];
   
   home.username = "jacob";
