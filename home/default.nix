@@ -2,7 +2,8 @@
 
 {
   imports = [
-    ./hypr
+    ./hypr # Window manager
+    ./zsh  # Primary shell
   ];
   
   home.username = "jacob";
@@ -29,26 +30,6 @@
 
   home.sessionVariables = {
     EDITOR = "nvim";
-  };
-
-  # Primary shell
-  programs.zsh = {
-    enable = true;
-    enableVteIntegration = true; # Terminal integration
-    autocd = true;
-    syntaxHighlighting.enable = true;
-
-    shellAliases = {
-      off = "shutdown now";
-      home-update = "home-manager switch --flake ~/.dotfiles";
-    };
-
-    antidote = {
-      enable = true;
-      plugins = [
-        "romkatv/powerlevel10k"
-      ];
-    };
   };
 
   # Let Home Manager install and manage itself.
