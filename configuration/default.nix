@@ -24,6 +24,8 @@
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
 
+  hardware.opengl.enable = true; # Have to do manually as hyprland is in home-manager
+
   services.fstrim.enable = true;
 
   swapDevices = [ {
@@ -84,9 +86,8 @@
     pulseaudio-ctl
     zsh
     gnupg
-
-    hyprland # wlroots can't access GPU when installed locally :/
   ];
+
   # Fonts
   fonts.packages = with pkgs; [
     jetbrains-mono
