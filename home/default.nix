@@ -43,18 +43,12 @@
       home-update = "home-manager switch --flake ~/.dotfiles";
     };
 
-    # QOL
-    oh-my-zsh = {
+    antidote = {
       enable = true;
+      plugins = [
+        "romkatv/powerlevel10k"
+      ];
     };
-
-    plugins = [
-      {
-        name = "powerlevel10k";
-        src = pkgs.zsh-powerlevel10k;
-        file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-      }
-    ];
   };
 
   # Let Home Manager install and manage itself.
