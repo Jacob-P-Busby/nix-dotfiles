@@ -42,6 +42,11 @@
     pulse.enable = true;
   };
 
+  programs.gnupg.agent = {
+    enable = true;
+    pinentryPackage = pkgs.pinentry-curses;
+  };
+
   # Set your time zone.
   time.timeZone = "Australia/Perth";
 
