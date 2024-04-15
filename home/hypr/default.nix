@@ -1,9 +1,6 @@
 { config, pkgs, ...}:
 {
   wayland.windowManager.hyprland = {
-    enable = true;
-
-    # See https://wiki.hyprland.org for documentation
     settings = {
       monitor = [
         "eDP-1,1920x1080@60,0x0,1"

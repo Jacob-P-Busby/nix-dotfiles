@@ -84,6 +84,8 @@
     pulseaudio-ctl
     zsh
     gnupg
+
+    hyprland # wlroots can't access GPU when installed locally :/
   ];
   # Fonts
   fonts.packages = with pkgs; [
