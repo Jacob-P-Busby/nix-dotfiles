@@ -13,6 +13,7 @@
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (pkgs.lib.getName pkg) [
       "obsidian"
+      "authy"
     ];
 
   home.stateVersion = "23.11"; # Please read the comment before changing.
@@ -25,6 +26,7 @@
     pkgs.waybar       # Top Bar
     pkgs.libreoffice  # Office suite
     pkgs.hyprpaper    # Wallpaper utility
+    pkgs.authy        # One time passwordd generator
 
     # CL
     pkgs.wl-clipboard # Copy & Paste
