@@ -12,18 +12,9 @@
       home-update = "home-manager switch --flake ~/.dotfiles";
     };
 
-    antidote = {
+    oh-my-zsh = {
       enable = true;
-
-      plugins = [
-        "romkatv/powerlevel10k"
-      ];
+      theme = "candy";
     };
-  };
-
-  home.file.p10k = {
-    enable = true;
-    source = ./p10k-config;
-    target = ".p10k.zsh";
   };
 }
