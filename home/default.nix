@@ -13,20 +13,20 @@
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (pkgs.lib.getName pkg) [
       "obsidian"
-      "authy"
     ];
 
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
   home.packages = [
     # GUI
-    pkgs.obsidian     # Notes
-    pkgs.firefox      # Browser
-    pkgs.kitty        # Terminal
-    pkgs.waybar       # Top Bar
-    pkgs.libreoffice  # Office suite
-    pkgs.hyprpaper    # Wallpaper utility
-    pkgs.authy        # One time passwordd generator
+    pkgs.obsidian           # Notes
+    pkgs.firefox            # Browser
+    pkgs.kitty              # Terminal
+    pkgs.waybar             # Top Bar
+    pkgs.libreoffice        # Office suite
+    pkgs.hyprpaper          # Wallpaper utility
+    pkgs.bitwarden-desktop  # Password manager
+    pkgs.bitwarden-cli      # Password manager cli
 
     # CL
     pkgs.wl-clipboard # Copy & Paste
