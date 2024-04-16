@@ -14,20 +14,25 @@
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
 
-    in {
-    nixosConfigurations = {
-      nixos = lib.nixosSystem {
-        inherit system;
-	modules = [ ./configuration ];
+    in
+    {
+      nixpkgs.config.allowUnfreePredicate = pkg:
+        builtins.elem (lib.getName pkg) [
+          "obsidian"
+        ];
+
+      nixosConfigurations = {
+        nixos = lib.nixosSystem {
+          inherit system;
+          modules = [ ./configuration ];
+        };
+      };
+
+      homeConfigurations = {
+        jacob = home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+          modules = [ ./home ];
+        };
       };
     };
-
-    homeConfigurations = {
-      jacob = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-	modules = [ ./home ];
-      };
-    };
-  };
-
 }
