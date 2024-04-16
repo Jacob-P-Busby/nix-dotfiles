@@ -10,23 +10,25 @@
   home.username = "jacob";
   home.homeDirectory = "/home/jacob";
 
+  nixpkgs.config.allowUnfreePredicate = pkg:
+    builtins.elem (pkgs.lib.getName pkg) [
+      "obsidian"
+    ];
+
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
-  home.packages = with pkgs; [
+  home.packages = [
     # GUI
-    logseq       # Notes
-    firefox      # Browser
-    kitty        # Terminal
-    waybar       # Top Bar
-    libreoffice  # Office suite
-    hyprpaper    # Wallpaper utility
+    pkgs.obsidian     # Notes
+    pkgs.firefox      # Browser
+    pkgs.kitty        # Terminal
+    pkgs.waybar       # Top Bar
+    pkgs.libreoffice  # Office suite
+    pkgs.hyprpaper    # Wallpaper utility
 
     # CL
-    wl-clipboard # Copy & Paste
+    pkgs.wl-clipboard # Copy & Paste
   ];
-
-  home.file = {
-  };
 
   home.sessionVariables = {
     EDITOR = "nvim";

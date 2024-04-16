@@ -16,11 +16,6 @@
 
     in
     {
-      nixpkgs.config.allowUnfreePredicate = pkg:
-        builtins.elem (lib.getName pkg) [
-          "obsidian"
-        ];
-
       nixosConfigurations = {
         nixos = lib.nixosSystem {
           inherit system;
