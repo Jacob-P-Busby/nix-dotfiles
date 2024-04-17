@@ -2,9 +2,10 @@
 
 {
   imports = [
-    ./hypr # Window manager
-    ./zsh  # Primary shell
-    ./git  # Git options
+    ./hypr   # Window manager
+    ./zsh    # Primary shell
+    ./git    # Git options
+    ./nvchad # Neovim config
   ];
   
   home.username = "jacob";
