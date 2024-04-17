@@ -15,7 +15,7 @@
     initExtra = 
       ''
         function lk {
-          cd "$(walk "$@")"
+          cd "$(walk --icons "$@")"
         }
       '';
 
