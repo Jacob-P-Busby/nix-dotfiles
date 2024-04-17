@@ -21,17 +21,21 @@
 
   home.packages = [
     # GUI
-    pkgs.obsidian     # Notes
-    pkgs.firefox      # Browser
-    pkgs.kitty        # Terminal
-    pkgs.waybar       # Top Bar
-    pkgs.libreoffice  # Office suite
-    pkgs.hyprpaper    # Wallpaper utility
-    pkgs.bitwarden-desktop
-    pkgs.bitwarden-cli
+    pkgs.obsidian           # Notes
+    pkgs.firefox            # Browser
+    pkgs.kitty              # Terminal
+    pkgs.waybar             # Top Bar
+    pkgs.libreoffice        # Office suite
+    pkgs.hyprpaper          # Wallpaper utility
+    pkgs.bitwarden-desktop  # Password Manager
 
     # CL
-    pkgs.wl-clipboard # Copy & Paste
+    pkgs.wl-clipboard       # Copy & Paste
+    pkgs.bitwarden-cli      # Password Manager CLI
+
+    # Node
+    pkgs.nodejs             # Base Node.js
+    pkgs.nodePackages.pnpm  # Node Package Manager
   ];
 
   home.sessionVariables = {
