@@ -26,7 +26,8 @@
     pkgs.waybar       # Top Bar
     pkgs.libreoffice  # Office suite
     pkgs.hyprpaper    # Wallpaper utility
-    pkgs.authy        # One time passwordd generator
+    pkgs.bitwarden-desktop
+    pkgs.bitwarden-cli
 
     # CL
     pkgs.wl-clipboard # Copy & Paste
