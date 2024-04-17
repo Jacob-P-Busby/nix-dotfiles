@@ -47,20 +47,6 @@
     EDITOR = "nvim";
   };
 
-  # GUI configurations
-  gtk = {
-    enable = true;
-    theme = {
-      name = "Catppuccin-Mocha-Mauve-Standard";
-      package = pkgs.catppuccin-gtk.override {
-        accents = [ "mauve" ];
-        size = "standard";
-        variant = "mocha";
-        tweaks = [ "normal" ];
-      };
-    };
-  };
-
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
