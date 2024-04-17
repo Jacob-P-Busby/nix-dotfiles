@@ -9,8 +9,15 @@
 
     shellAliases = {
       off = "shutdown now";
-      home-update = "home-manager switch --flake ~/.dotfiles";
+      update = "home-manager switch --flake ~/.dotfiles";
     };
+
+    initExtra = 
+      ''
+        function lk {
+          cd "$(walk "$@")"
+        }
+      '';
 
     oh-my-zsh = {
       enable = true;

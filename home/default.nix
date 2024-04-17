@@ -14,7 +14,6 @@
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (pkgs.lib.getName pkg) [
       "obsidian"
-      "authy"
     ];
 
   home.stateVersion = "23.11"; # Please read the comment before changing.
