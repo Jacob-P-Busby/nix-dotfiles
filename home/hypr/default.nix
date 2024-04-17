@@ -143,6 +143,7 @@
 
         "$mainMod, S, togglespecialworkspace, magic"
         "$mainMod SHIFT, S, movetoworkspace, special:magic"
+        "$mainMod, L, exec, kitty nvim"
       ];
 
       bindm = [
