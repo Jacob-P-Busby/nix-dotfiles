@@ -36,6 +36,9 @@
     # Node
     pkgs.nodejs             # Base Node.js
     pkgs.nodePackages.pnpm  # Node Package Manager
+
+    # Language Servers
+    pkgs.lua-language-server
   ];
 
   home.sessionVariables = {
