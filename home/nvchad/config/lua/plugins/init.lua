@@ -26,12 +26,24 @@ return {
   	opts = {
   		ensure_installed = {
   			"vim", "lua", "vimdoc",
-       "html", "css"
+       "html", "css", "nix",
   		},
   	},
   },
 
   {
     "HiPhish/rainbow-delimiters.nvim",
-  }
+    lazy = false,
+    config = function ()
+      vim.cmd [[
+        highlight RainbowDelimiterRed guifg=#f38ba8
+        highlight RainbowDelimiterYellow guifg=#f9e2af
+        highlight RainbowDelimiterBlue guifg=#89b4fa
+        highlight RainbowDelimiterOrange guifg=#fab387
+        highlight RainbowDelimiterGreen guifg=#a6e3a1
+        highlight RainbowDelimiterViolet guifg=#cba6f7
+        highlight RainbowDelimiterCyan guifg=#94e2d5
+      ]]
+    end
+  },
 }
