@@ -91,6 +91,7 @@
     pulseaudio-ctl
     zsh
     gnupg
+    unzip
   ];
 
   # Fonts
