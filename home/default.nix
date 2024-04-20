@@ -6,6 +6,7 @@
     ./zsh    # Primary shell
     ./git    # Git options
     ./nvchad # Neovim config
+    ./tmux   # Terminal multiplexer
   ];
   
   home.username = "jacob";
@@ -14,7 +15,11 @@
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (pkgs.lib.getName pkg) [
       "obsidian" # Only closed source I trust
-      "spotify"  # Love to change but no (good) streaming services have FOS clients :/
+
+      # Love to change but no (good) streaming services have FOS clients :/
+      # Tried flatpak but too much of a pain tbh
+      # Besides it's electron so there isn't too much dodgy stuff they can get away with
+      "spotify"
     ];
 
   home.stateVersion = "23.11"; # Please read the comment before changing.
