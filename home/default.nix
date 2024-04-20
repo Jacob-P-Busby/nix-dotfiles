@@ -13,7 +13,8 @@
 
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (pkgs.lib.getName pkg) [
-      "obsidian"
+      "obsidian" # Only closed source I trust
+      "spotify"  # Love to change but no (good) streaming services have FOS clients :/
     ];
 
   home.stateVersion = "23.11"; # Please read the comment before changing.
@@ -27,6 +28,7 @@
     pkgs.libreoffice        # Office suite
     pkgs.hyprpaper          # Wallpaper utility
     pkgs.bitwarden-desktop  # Password Manager
+    pkgs.spotify            # Music streaming
 
     # CL
     pkgs.wl-clipboard       # Copy & Paste
