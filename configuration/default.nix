@@ -94,15 +94,6 @@
     unzip
   ];
 
-  # Mainly used for closed source due to restriction feature
-  services.flatpak.enable = true;
-  xdg.portal = {
-    enable = true;
-    config.common.default = "*";
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-    wlr.enable = true;
-  };
-
   # Fonts
   fonts.packages = with pkgs; [
     jetbrains-mono
