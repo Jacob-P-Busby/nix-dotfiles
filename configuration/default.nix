@@ -47,6 +47,8 @@
     pinentryPackage = pkgs.pinentry-curses;
   };
 
+  virtualisation.virtualbox.host.enable = true;
+
   # Set your time zone.
   time.timeZone = "Australia/Perth";
 
@@ -75,6 +77,8 @@
   };
 
   users.groups.jacob.gid = 1000;
+
+  users.extraGroups.vboxusers.members = [ "jacob" ];
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
