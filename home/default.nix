@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lobster, ... }:
 
 {
   imports = [
@@ -47,6 +47,9 @@
     # Language Servers
     pkgs.lua-language-server
     pkgs.nixd
+
+    # Movies + whatever
+    lobster.packages."x86_64-linux".lobster
   ];
 
   home.sessionVariables = {
