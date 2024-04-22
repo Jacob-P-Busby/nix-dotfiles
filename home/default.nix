@@ -39,6 +39,7 @@
     pkgs.wl-clipboard       # Copy & Paste
     pkgs.bitwarden-cli      # Password Manager CLI
     pkgs.walk               # File Crawler
+    pkgs.languagetool       # Autocorrect
 
     # Node
     pkgs.nodejs             # Base Node.js
