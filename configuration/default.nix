@@ -96,6 +96,7 @@
     zsh
     gnupg
     unzip
+    jdk
   ];
 
   # Fonts
