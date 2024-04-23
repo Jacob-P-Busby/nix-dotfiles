@@ -166,6 +166,6 @@
   };
   
   home.packages = [
-    pkgs.hyprlock
+    pkgs.hyprshot
   ];
 }

@@ -16,10 +16,7 @@
     builtins.elem (pkgs.lib.getName pkg) [
       "obsidian" # Only closed source I trust
 
-      # Love to change but no (good) streaming services have FOS clients :/
-      # Tried flatpak but too much of a pain tbh
-      # Besides it's electron so there isn't too much dodgy stuff they can get away with
-      "spotify"
+      "spotify" # No good alternatives :/
     ];
 
   home.stateVersion = "23.11"; # Please read the comment before changing.
