@@ -167,7 +167,8 @@
   
   home.packages = [
     pkgs.hyprshot
-    pkgs.swaynotificationcenter
     pkgs.libnotify
   ];
+
+  services.dunst.enable = true;
 }
