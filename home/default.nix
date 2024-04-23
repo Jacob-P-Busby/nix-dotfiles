@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config , pkgs, ... }:
 
 {
   imports = [
@@ -46,6 +46,8 @@
     # Language Servers
     pkgs.lua-language-server
     pkgs.nixd
+
+    # Python specifics
     pkgs.python311Packages.jedi-language-server
   ];
 
