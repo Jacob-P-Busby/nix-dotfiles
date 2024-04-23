@@ -164,4 +164,8 @@
     target = "Hypr";
     text = "Hyprland";
   };
+  
+  home.packages = [
+    pkgs.hyprlock
+  ];
 }
