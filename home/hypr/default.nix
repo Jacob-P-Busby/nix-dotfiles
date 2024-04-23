@@ -141,9 +141,11 @@
 
         "$mainMod, X, swapactiveworkspaces, eDP-1 HDMI-A-1" # Switch between laptop and hdmi monitor
 
-        "$mainMod, S, togglespecialworkspace, magic"
-        "$mainMod SHIFT, S, movetoworkspace, special:magic"
+        "$mainMod, M, togglespecialworkspace, magic"
+        "$mainMod SHIFT, M, movetoworkspace, special:magic"
         "$mainMod, L, exec, kitty nvim"
+        "$mainMod, S, exec, hyprshot -m window"
+        "$mainMod SHIFT, S, exec, hyprshot -m region"
       ];
 
       bindm = [
