@@ -167,5 +167,7 @@
   
   home.packages = [
     pkgs.hyprshot
+    pkgs.swaynotificationcenter
+    pkgs.libnotify
   ];
 }

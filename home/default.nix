@@ -50,6 +50,18 @@
   home.sessionVariables = {
     EDITOR = "nvim";
   };
+  
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
+    config = {
+      common = {
+        default = [
+          "hyprland"
+        ];
+      };
+    };
+  };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
