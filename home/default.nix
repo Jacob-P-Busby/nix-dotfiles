@@ -47,6 +47,7 @@
     # Language Servers
     pkgs.lua-language-server
     pkgs.nixd
+    pkgs.clang-tools
 
     # Python specifics
     pkgs.python311Packages.jedi-language-server
