@@ -31,6 +31,7 @@
     pkgs.hyprpaper          # Wallpaper utility
     pkgs.bitwarden-desktop  # Password Manager
     pkgs.spotify            # Music streaming
+    pkgs.superTuxKart
 
     # CL
     pkgs.wl-clipboard       # Copy & Paste
