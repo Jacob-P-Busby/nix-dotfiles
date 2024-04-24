@@ -47,8 +47,9 @@
     # Language Servers
     pkgs.lua-language-server
     pkgs.nixd
+
+    # Python specifics
     pkgs.python311Packages.jedi-language-server
-    pkgs.clang
   ];
 
   home.sessionVariables = {
