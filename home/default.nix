@@ -5,7 +5,6 @@
     ./hypr   # Window manager
     ./zsh    # Primary shell
     ./git    # Git options
-    # ./nvchad # Neovim config
     ./tmux   # Terminal multiplexer
     ./nixvim
   ];
@@ -40,6 +39,7 @@
     pkgs.walk               # File Crawler
     pkgs.languagetool       # Autocorrect
     pkgs.python3            # Interactive Python
+    pkgs.rustup             # Miscellanious rust stuff
 
     # Node
     pkgs.nodejs             # Base Node.js
