@@ -1,12 +1,13 @@
-{ config , pkgs, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
     ./hypr   # Window manager
     ./zsh    # Primary shell
     ./git    # Git options
-    ./nvchad # Neovim config
+    # ./nvchad # Neovim config
     ./tmux   # Terminal multiplexer
+    ./nixvim
   ];
   
   home.username = "jacob";
@@ -43,14 +44,6 @@
     # Node
     pkgs.nodejs             # Base Node.js
     pkgs.nodePackages.pnpm  # Node Package Manager
-
-    # Language Servers
-    pkgs.lua-language-server
-    pkgs.nixd
-    pkgs.clang-tools
-
-    # Python specifics
-    pkgs.python311Packages.jedi-language-server
   ];
 
   home.sessionVariables = {

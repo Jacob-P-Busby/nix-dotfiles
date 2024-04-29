@@ -4,11 +4,15 @@
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable-small";
+
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
+    nixvim.url = "github:nix-community/nixvim";
+    nixvim.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }: 
+  outputs = { self, nixpkgs, home-manager, nixvim, ... }: 
     let
       lib = nixpkgs.lib;
       system = "x86_64-linux";
@@ -26,7 +30,10 @@
       homeConfigurations = {
         jacob = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          modules = [ ./home ];
+          modules = [ 
+            ./home
+            nixvim.homeManagerModules.nixvim
+          ];
         };
       };
     };
