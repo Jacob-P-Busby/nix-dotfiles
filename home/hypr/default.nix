@@ -1,4 +1,4 @@
-{ config, pkgs, ...}:
+{ pkgs, ...}:
 {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -91,7 +91,7 @@
       };
 
       misc = {
-        force_default_wallpaper = "-1";
+        force_default_wallpaper = "1";
       };
 
       "$mainMod" = "SUPER";
