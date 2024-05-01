@@ -9,10 +9,6 @@
 
     shellAliases = {
       off = "shutdown now";
-      update = "home-manager switch --flake ~/.dotfiles";
-      full-update = 
-      ''
-      '';
     };
 
     initExtra = 
@@ -21,13 +17,27 @@
           cd "$(walk --icons "$@")"
         }
 
+        function update {
+          if git diff-index --cached HEAD --exit-code >& - 2>& -
+          then
+            home-manager switch --flake ~/.dotfiles
+          else
+            echo "Git tree is dirty"
+          fi
+        }
+
         function update-full {
           cd ~/.dotfiles
-          nix flake update
-          git add flake.lock
-          git commit -m 'flake.lock bump'
-          home-manager switch --flake ~/.dotfiles
-          cd -
+          if git diff-index --cached HEAD --exit-code >& - 2>& -
+          then
+            nix flake update
+            git add flake.lock
+            git commit -m 'flake.lock bump'
+            home-manager switch --flake ~/.dotfiles
+          else
+            echo "Git tree is dirty"
+          fi
+          cd - >& -
         }
       '';
 
