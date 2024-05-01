@@ -19,8 +19,6 @@
   networking = {
    interfaces.wlan0.useDHCP = true;
    wireless.iwd.enable = true;
-
-   nameservers = ["1.1.1.1" "1.0.0.1"];
   };
 
   hardware.bluetooth.enable = true;
