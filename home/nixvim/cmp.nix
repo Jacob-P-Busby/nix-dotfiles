@@ -7,12 +7,13 @@
     cmp_luasnip.enable = true;
 
     luasnip.enable = true;
+    friendly-snippets.enable = true;
 
     cmp = {
       enable = true;
 
       settings = {
-        snippet.expand = "luasnip";
+        snippet.expand = "function(args) require('luasnip').lsp_expand(args.body) end";
 
         sources = [
           { name = "nvim_lsp"; }
