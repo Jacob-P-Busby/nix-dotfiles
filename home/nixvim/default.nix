@@ -33,6 +33,8 @@
       };
 
       tmux-navigator.enable = true;
+
+      treesitter.enable = true;
     };
   };
 }
