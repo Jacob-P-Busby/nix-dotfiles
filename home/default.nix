@@ -38,7 +38,7 @@
     pkgs.bitwarden-cli      # Password Manager CLI
     pkgs.walk               # File Crawler
     pkgs.languagetool       # Autocorrect
-    pkgs.python3            # Interactive Python
+    pkgs.python311          # Interactive Python
     pkgs.rustup             # Miscellanious rust stuff
 
     # Node
