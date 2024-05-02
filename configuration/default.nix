@@ -42,6 +42,10 @@
     pulse.enable = true;
   };
 
+  services.logind.extraConfig = '''
+    HandlePowerKey=ignore
+  '';
+
   programs.gnupg.agent = {
     enable = true;
     pinentryPackage = pkgs.pinentry-curses;
