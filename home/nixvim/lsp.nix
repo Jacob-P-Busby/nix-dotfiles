@@ -5,7 +5,7 @@
     enable = true;
 
     servers = {
-      pylsp.enable = true;
+      pyright.enable = true;
       nixd.enable = true;
       rust-analyzer = {
         enable = true;
