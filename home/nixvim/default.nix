@@ -40,6 +40,8 @@
       indent-blankline.enable = true;
 
       hop.enable = true;
+
+      which-key.enable = true;
     };
   };
 }
