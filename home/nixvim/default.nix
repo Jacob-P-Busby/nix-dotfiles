@@ -47,6 +47,8 @@
         enable = true;
         extensions = [ "nvim-tree" ];
       };
+
+      telescope.enable = true;
     };
   };
 }
