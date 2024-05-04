@@ -6,7 +6,8 @@
     ./zsh    # Primary shell
     ./git    # Git options
     ./tmux   # Terminal multiplexer
-    ./nixvim
+    ./nixvim # Code editor
+    ./kitty  # Terminal emulator
   ];
   
   home.username = "jacob";
