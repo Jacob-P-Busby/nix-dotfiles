@@ -2,26 +2,30 @@
 
 {
   programs.nixvim = {
-    plugins.bufferline.enable = true;
+    plugins.barbar.enable = true;
 
     keymaps = [
       {
-        action = "<cmd>BufferLineCycleNext<CR>";
+        action = "<cmd>BufferNext<CR>";
         mode = [ "n" ];
         key = "<m-Tab>";
         options = {
           desc = "Next Buffer";
-          silent = true;
         };
       }
       {
-        action = "<cmd>BufferLineCyclePrev<CR>";
+        action = "<cmd>BufferPrev<CR>";
         mode = [ "n" ];
         key = "<sm-Tab>";
         options = {
           desc = "Prev Buffer";
-          silent = true;
         };
+      }
+      {
+        action = "<cmd>BufferClose<CR>";
+        mode = [ "n" "v" ];
+        key = "<leader>x";
+        options.desc = "Close Buffer";
       }
     ];
   };

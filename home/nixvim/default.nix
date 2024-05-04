@@ -1,7 +1,8 @@
 { ... }: 
+
 {
   imports = [
-    ./bufferline.nix
+    ./barbar.nix
     ./cmp.nix
     ./keymap.nix
     ./lsp.nix
