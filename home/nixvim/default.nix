@@ -42,6 +42,8 @@
       hop.enable = true;
 
       which-key.enable = true;
+
+      lualine.enable = true;
     };
   };
 }
