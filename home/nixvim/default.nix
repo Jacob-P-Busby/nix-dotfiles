@@ -5,6 +5,7 @@
     ./cmp.nix
     ./keymap.nix
     ./lsp.nix
+    ./hop.nix
   ];
 
   programs.nixvim = {
@@ -35,6 +36,10 @@
       tmux-navigator.enable = true;
 
       treesitter.enable = true;
+
+      indent-blankline.enable = true;
+
+      hop.enable = true;
     };
   };
 }
