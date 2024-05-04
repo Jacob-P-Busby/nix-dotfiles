@@ -43,7 +43,10 @@
 
       which-key.enable = true;
 
-      lualine.enable = true;
+      lualine = { 
+        enable = true;
+        extensions = [ "nvim-tree" ];
+      };
     };
   };
 }
