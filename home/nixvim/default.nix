@@ -7,6 +7,7 @@
     ./keymap.nix
     ./lsp.nix
     ./hop.nix
+    ./telescope.nix
   ];
 
   programs.nixvim = {
@@ -49,7 +50,7 @@
         extensions = [ "nvim-tree" ];
       };
 
-      telescope.enable = true;
+      nvim-autopairs.enable = true;
     };
   };
 }
