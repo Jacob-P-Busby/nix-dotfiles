@@ -8,6 +8,7 @@
     ./lsp.nix
     ./hop.nix
     ./telescope.nix
+    ./whichkey.nix
   ];
 
   programs.nixvim = {
@@ -42,8 +43,6 @@
       indent-blankline.enable = true;
 
       hop.enable = true;
-
-      which-key.enable = true;
 
       lualine = { 
         enable = true;
