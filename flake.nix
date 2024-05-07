@@ -10,11 +10,9 @@
 
     nixvim.url = "github:nix-community/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
-
-    spicetify.url = "github:the-argus/spicetify-nix";
   };
 
-  outputs = { nixpkgs, home-manager, nixvim, spicetify-nix, ... } : 
+  outputs = { self, nixpkgs, home-manager, nixvim, ... }: 
     let
       lib = nixpkgs.lib;
       system = "x86_64-linux";
@@ -32,7 +30,6 @@
       homeConfigurations = {
         jacob = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          extraSpecialArgs = { inherit spicetify-nix; };
           modules = [ 
             ./home
             nixvim.homeManagerModules.nixvim
