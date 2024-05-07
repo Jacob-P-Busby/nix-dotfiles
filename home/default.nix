@@ -42,6 +42,7 @@
     pkgs.languagetool       # Autocorrect
     pkgs.python311          # Interactive Python
     pkgs.rustup             # Miscellanious rust stuff
+    pkgs.ripgrep            # Optional dependency for many things
 
     # Node
     pkgs.nodejs             # Base Node.js
