@@ -12,7 +12,7 @@
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, home-manager, nixvim, ... }: 
+  outputs = { nixpkgs, home-manager, nixvim, ... }: 
     let
       lib = nixpkgs.lib;
       system = "x86_64-linux";
