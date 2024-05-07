@@ -4,7 +4,7 @@
   programs.nixvim.plugins.which-key = {
     enable = true;
 
-    labels = {
+    keyLabels = {
       "<leader>j" = "Prev Diagnosis";
       "<leader>k" = "Next Diagnosis";
 
@@ -15,7 +15,7 @@
       "gt" = "[G]oto [T]ype";
 
 
-      "<leader>T" = "[T]elescope";
+      "<leader>t" = "[T]elescope";
     };
   };
 }
