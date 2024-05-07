@@ -50,6 +50,8 @@
       };
 
       nvim-autopairs.enable = true;
+
+      rust-tools.enable = true;
     };
   };
 }
