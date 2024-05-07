@@ -8,6 +8,7 @@
     ./tmux   # Terminal multiplexer
     ./nixvim # Code editor
     ./kitty  # Terminal emulator
+    ./emacs  # Trying out new editor
   ];
   
   home.username = "jacob";
@@ -32,7 +33,7 @@
     pkgs.hyprpaper          # Wallpaper utility
     pkgs.bitwarden-desktop  # Password Manager
     pkgs.spotify            # Music streaming
-    pkgs.superTuxKart
+    pkgs.superTuxKart       # Fun
 
     # CL
     pkgs.wl-clipboard       # Copy & Paste
