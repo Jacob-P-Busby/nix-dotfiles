@@ -4,10 +4,11 @@
   imports = [
     ./hypr   # Window manager
     ./zsh    # Primary shell
-    ./git    # Git options
-    ./tmux   # Terminal multiplexer
-    ./nixvim # Code editor
-    ./kitty  # Terminal emulator
+    ./git       # Git options
+    ./tmux      # Terminal multiplexer
+    ./nixvim    # Code editor
+    ./kitty     # Terminal emulator
+    ./spicetify # Customised music streaming
   ];
   
   home.username = "jacob";
@@ -18,6 +19,7 @@
       "obsidian" # Only closed source I trust
 
       "spotify" # No good alternatives :/
+                # This is used by ./spicetify
     ];
 
   home.stateVersion = "23.11"; # Please read the comment before changing.
@@ -31,8 +33,7 @@
     pkgs.libreoffice        # Office suite
     pkgs.hyprpaper          # Wallpaper utility
     pkgs.bitwarden-desktop  # Password Manager
-    pkgs.spotify            # Music streaming
-    pkgs.superTuxKart
+    pkgs.superTuxKart       # Fun
 
     # CL
     pkgs.wl-clipboard       # Copy & Paste
