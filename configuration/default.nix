@@ -50,7 +50,7 @@
 
   programs.gnupg.agent = {
     enable = true;
-    pinentryPackage = pkgs.pinentry-rofi;
+    pinentryPackage = pkgs.pinentry-gtk2;
   };
 
   virtualisation.virtualbox.host.enable = true;
