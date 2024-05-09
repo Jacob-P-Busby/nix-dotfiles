@@ -43,7 +43,7 @@
     pkgs.python311          # Interactive Python
     pkgs.rustup             # Miscellanious rust stuff
     pkgs.ripgrep            # Optional dependency for many things
-    pkgs.cmake              # Needed to compile emacs stuff
+    pkgs.dosbox
 
     # Node
     pkgs.nodejs             # Base Node.js
