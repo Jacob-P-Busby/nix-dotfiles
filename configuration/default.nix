@@ -43,13 +43,14 @@
     wireplumber.enable = true;
   };
 
-  services.logind.extraConfig = '''
-    HandlePowerKey=ignore
+  services.logind.extraConfig = ''
+    '
+        HandlePowerKey=ignore
   '';
 
   programs.gnupg.agent = {
     enable = true;
-    pinentryPackage = pkgs.pinentry-curses;
+    pinentryPackage = pkgs.pinentry-gtk2;
   };
 
   virtualisation.virtualbox.host.enable = true;
