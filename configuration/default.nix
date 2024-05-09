@@ -5,10 +5,9 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware.nix
-    ];
+  imports = [ # Include the results of the hardware scan.
+    ./hardware.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -17,21 +16,22 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   networking = {
-   interfaces.wlan0.useDHCP = true;
-   wireless.iwd.enable = true;
+    interfaces.wlan0.useDHCP = true;
+    wireless.iwd.enable = true;
   };
 
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
 
-  hardware.opengl.enable = true; # Have to do manually as hyprland is in home-manager
+  hardware.opengl.enable =
+    true; # Have to do manually as hyprland is in home-manager
 
   services.fstrim.enable = true;
 
-  swapDevices = [ {
+  swapDevices = [{
     device = "/var/lib/swapfile";
-    size = 8*1024;
-  } ];
+    size = 8 * 1024;
+  }];
 
   security.rtkit.enable = true;
   services.pipewire = {
@@ -50,7 +50,7 @@
 
   programs.gnupg.agent = {
     enable = true;
-    pinentryPackage = pkgs.pinentry-gtk2;
+    pinentryPackage = pkgs.pinentry-rofi;
   };
 
   virtualisation.virtualbox.host.enable = true;
@@ -79,7 +79,7 @@
     isNormalUser = true;
     description = "Jacob Busby";
     extraGroups = [ "networkmanager" "wheel" "jacob" ];
-    packages = with pkgs; [];
+    packages = with pkgs; [ ];
   };
 
   users.groups.jacob.gid = 1000;
@@ -97,7 +97,6 @@
     neofetch
     wireplumber
     btop
-    rofi-wayland
     pulseaudio-ctl
     zsh
     gnupg
@@ -106,10 +105,7 @@
   ];
 
   # Fonts
-  fonts.packages = with pkgs; [
-    jetbrains-mono
-    nerdfonts
-  ];
+  fonts.packages = with pkgs; [ jetbrains-mono nerdfonts ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
