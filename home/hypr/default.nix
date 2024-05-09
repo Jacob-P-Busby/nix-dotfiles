@@ -1,5 +1,4 @@
-{ pkgs, ...}:
-{
+{ pkgs, ... }: {
   wayland.windowManager.hyprland = {
     enable = true;
 
@@ -14,23 +13,20 @@
       "$fileManager" = "nemo";
       "$menu" = "rofi -show drun";
 
-      env = [
-        "XCURSOR_SIZE,24"
-        "QT_QPA_PLATFORMTHEME,qt5ct"
-      ];
+      env = [ "XCURSOR_SIZE,24" "QT_QPA_PLATFORMTHEME,qt5ct" ];
 
       input = {
         kb_layout = "us";
-	      kb_variant = "";
-	      kb_model = "";
-	      kb_options = "";
-	      kb_rules = "";
+        kb_variant = "";
+        kb_model = "";
+        kb_options = "";
+        kb_rules = "";
 
         follow_mouse = 1;
 
         touchpad = {
           natural_scroll = "yes";
-	        scroll_factor = 0.5;
+          scroll_factor = 0.5;
         };
 
         sensitivity = 0.2;
@@ -81,17 +77,11 @@
         preserve_split = "yes";
       };
 
-      master = {
-        new_is_master = true;
-      };
+      master = { new_is_master = true; };
 
-      gestures = {
-        workspace_swipe = "on";
-      };
+      gestures = { workspace_swipe = "on"; };
 
-      misc = {
-        force_default_wallpaper = "1";
-      };
+      misc = { force_default_wallpaper = "1"; };
 
       "$mainMod" = "SUPER";
 
@@ -105,7 +95,7 @@
         "$mainMod, Return, exec, $terminal"
         "$mainMod, Z, exec, firefox"
         "$mainMod_SHIFT, Z, exec, firefox --private-window"
-        
+
         "$mainMod, left, movefocus, l"
         "$mainMod, right, movefocus, r"
         "$mainMod, up, movefocus, u"
@@ -153,7 +143,7 @@
       ];
 
       exec-once = [
-        "waybar"    # Top bar
+        "waybar" # Top bar
         "hyprpaper" # Wallpaper utility
       ];
     };
@@ -165,11 +155,8 @@
     target = "Hypr";
     text = "Hyprland";
   };
-  
-  home.packages = [
-    pkgs.hyprshot
-    pkgs.libnotify
-  ];
+
+  home.packages = [ pkgs.hyprshot pkgs.libnotify pkgs.rofi-wayland ];
 
   services.dunst.enable = true;
 }
