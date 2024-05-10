@@ -51,9 +51,6 @@
   programs.gnupg.agent = {
     enable = true;
     pinentryPackage = pkgs.pinentry-qt;
-    settings = {
-      allow-loopback-entry = true;
-    };
   };
 
   virtualisation.virtualbox.host.enable = true;
