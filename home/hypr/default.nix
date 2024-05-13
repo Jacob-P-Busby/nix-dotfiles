@@ -156,12 +156,8 @@
     text = "Hyprland";
   };
 
-  home.packages = [
-    pkgs.hyprshot
-    pkgs.libnotify
-    pkgs.rofi-wayland
-    pkgs.catppuccin-cursors.mochaMauve
-  ];
+  home.packages =
+    [ pkgs.hyprshot pkgs.libnotify pkgs.rofi-wayland pkgs.catppuccin-cursors ];
 
   home.file.cursor = {
     enable = true;
