@@ -162,8 +162,8 @@
   home.file.cursor = {
     enable = true;
     target = ".icons/catppuccin";
-    source = <pkgs.catppuccin-cursors.mochaMauve>
-      /share/icons/Catppuccin-Mocha-Mauve-Cursors;
+    source =
+      <pkgs.catppuccin-cursors> /share/icons/Catppuccin-Mocha-Mauve-Cursors;
   };
 
   services.dunst.enable = true;
