@@ -156,7 +156,8 @@
     text = "Hyprland";
   };
 
-  home.packages = [ pkgs.hyprshot pkgs.libnotify pkgs.rofi-wayland ];
+  home.packages =
+    [ pkgs.hyprshot pkgs.libnotify pkgs.rofi-wayland pkgs.catppuccin-cursors ];
 
   services.dunst.enable = true;
 }
