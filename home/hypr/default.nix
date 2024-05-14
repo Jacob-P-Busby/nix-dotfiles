@@ -156,15 +156,7 @@
     text = "Hyprland";
   };
 
-  home.packages =
-    [ pkgs.hyprshot pkgs.libnotify pkgs.rofi-wayland pkgs.catppuccin-cursors ];
-
-  home.file.cursor = {
-    enable = true;
-    target = ".icons/catppuccin";
-    source =
-      <pkgs.catppuccin-cursors> /share/icons/Catppuccin-Mocha-Mauve-Cursors;
-  };
+  home.packages = [ pkgs.hyprshot pkgs.libnotify pkgs.rofi-wayland ];
 
   services.dunst.enable = true;
 }
