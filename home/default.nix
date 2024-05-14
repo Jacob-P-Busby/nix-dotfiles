@@ -2,15 +2,15 @@
 
 {
   imports = [
-    ./hypr   # Window manager
-    ./zsh    # Primary shell
-    ./git    # Git options
-    ./tmux   # Terminal multiplexer
+    ./hypr # Window manager
+    ./zsh # Primary shell
+    ./git # Git options
+    ./tmux # Terminal multiplexer
     ./nixvim # Code editor
-    ./kitty  # Terminal emulator
-    ./emacs  # Trying out new editor
+    ./kitty # Terminal emulator
+    ./emacs # Trying out new editor
   ];
-  
+
   home.username = "jacob";
   home.homeDirectory = "/home/jacob";
 
@@ -25,45 +25,38 @@
 
   home.packages = [
     # GUI
-    pkgs.obsidian           # Notes
-    pkgs.firefox            # Browser
-    pkgs.kitty              # Terminal
-    pkgs.waybar             # Top Bar
-    pkgs.libreoffice        # Office suite
-    pkgs.hyprpaper          # Wallpaper utility
-    pkgs.bitwarden-desktop  # Password Manager
-    pkgs.spotify            # Music streaming
-    pkgs.superTuxKart       # Fun
+    pkgs.obsidian # Notes
+    pkgs.firefox # Browser
+    pkgs.kitty # Terminal
+    pkgs.waybar # Top Bar
+    pkgs.libreoffice # Office suite
+    pkgs.hyprpaper # Wallpaper utility
+    pkgs.bitwarden-desktop # Password Manager
+    pkgs.spotify # Music streaming
+    pkgs.superTuxKart # Fun
+    pkgs.krita # Art
 
     # CL
-    pkgs.wl-clipboard       # Copy & Paste
-    pkgs.bitwarden-cli      # Password Manager CLI
-    pkgs.walk               # File Crawler
-    pkgs.languagetool       # Autocorrect
-    pkgs.python311          # Interactive Python
-    pkgs.rustup             # Miscellanious rust stuff
-    pkgs.ripgrep            # Optional dependency for many things
+    pkgs.wl-clipboard # Copy & Paste
+    pkgs.bitwarden-cli # Password Manager CLI
+    pkgs.walk # File Crawler
+    pkgs.languagetool # Autocorrect
+    pkgs.python311 # Interactive Python
+    pkgs.rustup # Miscellanious rust stuff
+    pkgs.ripgrep # Optional dependency for many things
     pkgs.dosbox
 
     # Node
-    pkgs.nodejs             # Base Node.js
-    pkgs.nodePackages.pnpm  # Node Package Manager
+    pkgs.nodejs # Base Node.js
+    pkgs.nodePackages.pnpm # Node Package Manager
   ];
 
-  home.sessionVariables = {
-    EDITOR = "nvim";
-  };
-  
+  home.sessionVariables = { EDITOR = "nvim"; };
+
   xdg.portal = {
     enable = true;
     extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
-    config = {
-      common = {
-        default = [
-          "hyprland"
-        ];
-      };
-    };
+    config = { common = { default = [ "hyprland" ]; }; };
   };
 
   # Let Home Manager install and manage itself.
