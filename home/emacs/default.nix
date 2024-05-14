@@ -12,9 +12,17 @@
   };
 
   home.packages = [
+    # Needs
     pkgs.cmake
     pkgs.shellcheck
-    pkgs.nixfmt
     pkgs.libtool
+
+    # Languages
+    pkgs.nixfmt
+    pkgs.nil
+
+    pkgs.python311.python-lsp-server
+
+    # Rust is handled by rustup
   ];
 }

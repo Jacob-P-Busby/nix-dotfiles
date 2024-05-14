@@ -6,9 +6,8 @@
     ./zsh # Primary shell
     ./git # Git options
     ./tmux # Terminal multiplexer
-    ./nixvim # Code editor
     ./kitty # Terminal emulator
-    ./emacs # Trying out new editor
+    ./emacs # Text + code editor
   ];
 
   home.username = "jacob";
@@ -42,9 +41,8 @@
     pkgs.walk # File Crawler
     pkgs.languagetool # Autocorrect
     pkgs.python311 # Interactive Python
-    pkgs.rustup # Miscellanious rust stuff
     pkgs.ripgrep # Optional dependency for many things
-    pkgs.dosbox
+    pkgs.rustup # Rust my beloved
 
     # Node
     pkgs.nodejs # Base Node.js
