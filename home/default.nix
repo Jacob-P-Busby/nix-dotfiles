@@ -34,7 +34,6 @@
     pkgs.spotify # Music streaming
     pkgs.superTuxKart # Fun
     pkgs.krita # Art
-    pkgs.vscodium
 
     # CL
     pkgs.wl-clipboard # Copy & Paste
