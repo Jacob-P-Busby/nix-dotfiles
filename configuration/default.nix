@@ -69,7 +69,8 @@
     pinentryPackage = pkgs.pinentry-qt;
   };
 
-  virtualisation.virtualbox.host.enable = true;
+  # Current regression as of 2024-05-19
+  # virtualisation.virtualbox.host.enable = true;
 
   # Set your time zone.
   time.timeZone = "Australia/Perth";
