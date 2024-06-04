@@ -44,6 +44,7 @@
     pkgs.python311 # Interactive Python
     pkgs.ripgrep # Optional dependency for many things
     pkgs.rustup # Rust my beloved
+    pkgs.lsd # Better ls
 
     # Node
     pkgs.nodejs # Base Node.js
