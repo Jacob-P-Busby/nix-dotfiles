@@ -132,7 +132,7 @@
 
         "$mainMod, M, togglespecialworkspace, magic"
         "$mainMod SHIFT, M, movetoworkspace, special:magic"
-        "$mainMod, L, exec, kitty nvim"
+        "$mainMod, L, exec, emacsclient -c"
         "$mainMod, S, exec, hyprshot -m window"
         "$mainMod SHIFT, S, exec, hyprshot -m region"
       ];
