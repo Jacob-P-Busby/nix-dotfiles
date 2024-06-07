@@ -20,6 +20,8 @@
     wireless.iwd.enable = true;
   };
 
+  system.activationScripts.rfkill_unblock.text = "rfkill unblock all";
+
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
 
