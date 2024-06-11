@@ -15,8 +15,6 @@
 
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (pkgs.lib.getName pkg) [
-      "obsidian" # Only closed source I trust
-
       "spotify" # No good alternatives :/
     ];
 
@@ -24,7 +22,6 @@
 
   home.packages = [
     # GUI
-    pkgs.obsidian # Notes
     pkgs.firefox # Browser
     pkgs.kitty # Terminal
     pkgs.waybar # Top Bar
