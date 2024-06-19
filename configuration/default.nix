@@ -23,6 +23,14 @@
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
 
+  services.printing.enable = true;
+
+  services.avahi = {
+    enable = true;
+    nssmdns = true;
+    openFirewall = true;
+  };
+
   hardware.opengl.enable =
     true; # Have to do manually as hyprland is in home-manager
 
