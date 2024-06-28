@@ -16,6 +16,11 @@
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (pkgs.lib.getName pkg) [
       "spotify" # No good alternatives :/
+
+      # Steam stuff
+      "steam"
+      "steam-original"
+      "steam-run"
     ];
 
   home.stateVersion = "23.11"; # Please read the comment before changing.
@@ -32,6 +37,7 @@
     pkgs.superTuxKart # Fun
     pkgs.krita # Art
     pkgs.inkscape # SVG
+    pkgs.steam # Games
 
     # CL
     pkgs.wl-clipboard # Copy & Paste
