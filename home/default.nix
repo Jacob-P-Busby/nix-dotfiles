@@ -37,7 +37,6 @@
     pkgs.superTuxKart # Fun
     pkgs.krita # Art
     pkgs.inkscape # SVG
-    pkgs.steam # Games
 
     # CL
     pkgs.wl-clipboard # Copy & Paste
