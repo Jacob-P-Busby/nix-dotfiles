@@ -32,6 +32,8 @@
 
   services.printing.enable = true;
 
+  services.fprintd.enable = true;
+
   services.avahi = {
     enable = true;
     nssmdns = true;
