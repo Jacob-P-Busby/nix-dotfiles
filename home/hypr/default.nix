@@ -5,7 +5,7 @@
     settings = {
       monitor = [
         "eDP-1,1920x1080@60,0x0,1"
-        "HDMI-A-1,1920x1080@144,0x-1080,1" # Home AOC monitor
+        "HDMI-A-2,1920x1080@144,0x-1080,1" # Home AOC monitor
         ",preferred,auto,1"
       ];
 
@@ -128,7 +128,7 @@
         "$mainMod SHIFT, 9, movetoworkspace, 9"
         "$mainMod SHIFT, 0, movetoworkspace, 10"
 
-        "$mainMod, X, swapactiveworkspaces, eDP-1 HDMI-A-1" # Switch between laptop and hdmi monitor
+        "$mainMod, X, swapactiveworkspaces, eDP-1 HDMI-A-2" # Switch between laptop and hdmi monitor
 
         "$mainMod, M, togglespecialworkspace, magic"
         "$mainMod SHIFT, M, movetoworkspace, special:magic"
