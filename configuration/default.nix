@@ -27,8 +27,6 @@
     wireless.iwd.enable = true;
   };
 
-  services.resolved.enable = true;
-
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
 
