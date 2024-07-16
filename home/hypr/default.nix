@@ -32,6 +32,11 @@
         sensitivity = 0.2;
       };
 
+      device = {
+        name = "synps/2-synaptics-touchpad";
+        enabled = false;
+      };
+
       general = {
         gaps_in = 10;
         gaps_out = 10;
