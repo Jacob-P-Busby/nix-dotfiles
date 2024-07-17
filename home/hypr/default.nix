@@ -138,6 +138,9 @@
         "$mainMod, L, exec, emacsclient -c"
         "$mainMod, S, exec, hyprshot -m window"
         "$mainMod SHIFT, S, exec, hyprshot -m region"
+
+        ", XF86MonBrightnessUp, exec, brightnessctl -d intel_backlight s +10%"
+        ", XF86MonBrightnessDown, exec, brightnessctl -d intel_backlight s 10%-"
       ];
 
       bindm = [
@@ -159,7 +162,8 @@
     text = "Hyprland";
   };
 
-  home.packages = [ pkgs.hyprshot pkgs.libnotify pkgs.rofi-wayland ];
+  home.packages =
+    [ pkgs.hyprshot pkgs.libnotify pkgs.rofi-wayland pkgs.brightnessctl ];
 
   services.dunst.enable = true;
 }
