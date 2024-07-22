@@ -13,8 +13,10 @@
 
   home.packages = [
     pkgs.cmake
+    pkgs.libvterm
     pkgs.shellcheck
     pkgs.libtool
+    pkgs.gcc
 
     # Org mode
     pkgs.texliveFull
