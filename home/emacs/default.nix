@@ -28,6 +28,7 @@
 
     # Web
     pkgs.nodePackages.typescript-language-server
+    pkgs.vscode-langservers-extracted
 
     # Rust is handled by rustup
   ];
