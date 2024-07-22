@@ -20,8 +20,12 @@
     pkgs.texliveFull
 
     # Languages
+    # Nix
     pkgs.nixfmt
     pkgs.nil
+
+    # Web
+    pkgs.nodePackages.typescript-language-server
 
     # Rust is handled by rustup
   ];
