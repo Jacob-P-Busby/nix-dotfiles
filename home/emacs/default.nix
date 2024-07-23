@@ -29,6 +29,8 @@
     # Web
     pkgs.nodePackages.typescript-language-server
     pkgs.vscode-langservers-extracted
+    pkgs.emmet-ls
+    pkgs.tailwindcss-language-server
 
     # Rust is handled by rustup
   ];
