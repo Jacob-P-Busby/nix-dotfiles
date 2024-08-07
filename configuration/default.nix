@@ -27,6 +27,8 @@
     wireless.iwd.enable = true;
   };
 
+  virtualisation.docker.enable = true;
+
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
 
@@ -39,11 +41,10 @@
     vt = 2;
     settings = {
       default_session = {
-        command = 
-	''
-	${pkgs.greetd.tuigreet}/bin/tuigreet -r -t -c Hyprland --asterisks
-	'';
-	user = "greeter";
+        command = ''
+          ${pkgs.greetd.tuigreet}/bin/tuigreet -r -t -c Hyprland --asterisks
+        '';
+        user = "greeter";
       };
     };
   };
