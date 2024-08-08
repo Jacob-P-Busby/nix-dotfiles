@@ -36,6 +36,14 @@
 
   services.fprintd.enable = true;
 
+  services.postgresql = {
+    enable = true;
+    authentication = pkgs.lib.mkOverride 10 ''
+      #type database  DBuser  auth-method
+      local all       all     trust
+    '';
+  };
+
   services.greetd = {
     enable = true;
     vt = 2;
@@ -134,7 +142,7 @@
     shell = pkgs.zsh;
     isNormalUser = true;
     description = "Jacob Busby";
-    extraGroups = [ "networkmanager" "wheel" "jacob" ];
+    extraGroups = [ "networkmanager" "wheel" "jacob" "docker" ];
     packages = with pkgs; [ ];
   };
 
