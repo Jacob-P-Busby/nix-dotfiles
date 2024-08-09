@@ -36,16 +36,6 @@
 
   services.fprintd.enable = true;
 
-  services.postgresql = {
-    enable = true;
-    authentication = pkgs.lib.mkOverride 10 ''
-      #type database  DBuser  auth-method
-      host all all 127.0.0.1/32 trust
-    '';
-
-    settings.port = 1234;
-  };
-
   services.greetd = {
     enable = true;
     vt = 2;
