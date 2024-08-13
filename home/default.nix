@@ -37,7 +37,7 @@
     pkgs.superTuxKart # Fun
     pkgs.krita # Art
     pkgs.inkscape # SVG
-    pkgs.vinegar
+    pkgs.blender
 
     # CL
     pkgs.wl-clipboard # Copy & Paste
