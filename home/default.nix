@@ -53,9 +53,21 @@
     # Node
     pkgs.nodejs # Base Node.js
     pkgs.nodePackages.pnpm # Node Package Manager
+
+    # Nix
+    pkgs.nixfmt
+    pkgs.nil
+
+    # Web
+    pkgs.nodePackages.typescript-language-server
+    pkgs.vscode-langservers-extracted
+    pkgs.emmet-ls
+    pkgs.tailwindcss-language-server
+
+    # Rust is handled by rustup
   ];
 
-  home.sessionVariables = { EDITOR = "nvim"; };
+  home.sessionVariables = { EDITOR = "hx"; };
 
   xdg.portal = {
     enable = true;
