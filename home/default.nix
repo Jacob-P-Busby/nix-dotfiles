@@ -8,6 +8,7 @@
     ./tmux # Terminal multiplexer
     ./kitty # Terminal emulator
     ./emacs # Text + code editor
+    ./helix # Fast
   ];
 
   home.username = "jacob";
