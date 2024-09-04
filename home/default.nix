@@ -49,6 +49,7 @@
     pkgs.ripgrep # Optional dependency for many things
     pkgs.rustup # Rust my beloved
     pkgs.lsd # Better ls
+    pkgs.go-task # Better make
 
     # Node
     pkgs.nodejs # Base Node.js
