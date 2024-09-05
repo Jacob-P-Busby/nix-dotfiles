@@ -64,6 +64,7 @@
     pkgs.vscode-langservers-extracted
     pkgs.emmet-ls
     pkgs.tailwindcss-language-server
+    pkgs.vue-language-server
 
     # Rust is handled by rustup
   ];
