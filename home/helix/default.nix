@@ -56,6 +56,13 @@
             "tailwindcss-ls"
           ];
         }
+        {
+          name = "vue";
+          language-servers = [
+            "vuels"
+            "tailwindcss-ls"
+          ];
+        }
       ];
     };
   };
