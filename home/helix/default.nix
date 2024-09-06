@@ -61,6 +61,7 @@
           language-servers = [
             "vuels"
             "tailwindcss-ls"
+            "typescript-language-server"
           ];
         }
       ];
