@@ -9,6 +9,7 @@
     ./kitty # Terminal emulator
     ./emacs # Text + code editor
     ./helix # Fast
+    ./vsc # Web Dev
   ];
 
   home.username = "jacob";
