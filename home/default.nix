@@ -55,7 +55,7 @@
 
     # Node
     pkgs.nodejs # Base Node.js
-    pkgs.nodePackages.pnpm # Node Package Manager
+    pkgs.nodePackages.yarn
 
     # Nix
     pkgs.nixfmt
