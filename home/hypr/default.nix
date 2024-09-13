@@ -5,7 +5,6 @@
     settings = {
       monitor = [
         "eDP-1,1920x1080@60,0x0,1"
-        "HDMI-A-2,1920x1080@144,0x-1080,1" # Home AOC monitor
         ",preferred,auto,1"
       ];
 
