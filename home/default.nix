@@ -23,6 +23,7 @@
       "steam"
       "steam-original"
       "steam-run"
+      "webstorm"
     ];
 
   home.stateVersion = "23.11"; # Please read the comment before changing.
@@ -40,6 +41,7 @@
     pkgs.krita # Art
     pkgs.inkscape # SVG
     pkgs.blender
+    pkgs.jetbrains.webstorm
 
     # CL
     pkgs.wl-clipboard # Copy & Paste
