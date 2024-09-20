@@ -23,7 +23,10 @@
       "steam"
       "steam-original"
       "steam-run"
+
+      # Jetbrains
       "webstorm"
+      "rust-rover"
     ];
 
   home.stateVersion = "23.11"; # Please read the comment before changing.
@@ -42,6 +45,7 @@
     pkgs.inkscape # SVG
     pkgs.blender
     pkgs.jetbrains.webstorm
+    pkgs.jetbrains.rust-rover
 
     # CL
     pkgs.wl-clipboard # Copy & Paste
