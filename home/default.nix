@@ -58,6 +58,8 @@
     pkgs.lsd # Better ls
     pkgs.go-task # Better make
     pkgs.lazygit
+    pkgs.awscli2
+    pkgs.opentofu
 
     # Node
     pkgs.nodejs # Base Node.js
