@@ -36,7 +36,7 @@
     pkgs.firefox # Browser
     pkgs.kitty # Terminal
     pkgs.waybar # Top Bar
-    pkgs.libreoffice-fresh # Office suite
+    pkgs.libreoffice # Office suite
     pkgs.hyprpaper # Wallpaper utility
     pkgs.bitwarden-desktop # Password Manager
     pkgs.spotify # Music streaming
