@@ -27,6 +27,8 @@
       # Jetbrains
       "webstorm"
       "rust-rover"
+
+      "obsidian"
     ];
 
   home.stateVersion = "23.11"; # Please read the comment before changing.
@@ -46,6 +48,7 @@
     pkgs.blender
     pkgs.jetbrains.webstorm
     pkgs.jetbrains.rust-rover
+    pkgs.obsidian
 
     # CL
     pkgs.wl-clipboard # Copy & Paste
