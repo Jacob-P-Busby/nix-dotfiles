@@ -65,9 +65,6 @@
           ];
         }
       ];
-      language-server.rust-analyzer.diagnostics = {
-        disable = ["unresolved-proc-macro"];
-      };
     };
   };
 }
