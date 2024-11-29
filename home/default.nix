@@ -49,7 +49,6 @@
     pkgs.jetbrains.webstorm
     pkgs.jetbrains.rust-rover
     pkgs.obsidian
-    pkgs.musl
 
     # CL
     pkgs.wl-clipboard # Copy & Paste
@@ -64,6 +63,8 @@
     pkgs.lazygit
     pkgs.awscli2
     pkgs.opentofu
+    pkgs.musl
+    pkgs.gcc
 
     # Node
     pkgs.nodejs # Base Node.js
