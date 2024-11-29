@@ -49,6 +49,7 @@
     pkgs.jetbrains.webstorm
     pkgs.jetbrains.rust-rover
     pkgs.obsidian
+    pkgs.musl
 
     # CL
     pkgs.wl-clipboard # Copy & Paste
