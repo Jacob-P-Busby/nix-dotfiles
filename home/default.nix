@@ -83,6 +83,8 @@
     pkgs.vue-language-server
 
     # Rust is handled by rustup
+
+    pkgs.terraform-ls
   ];
 
   home.sessionVariables = { EDITOR = "hx"; };
