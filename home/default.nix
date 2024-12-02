@@ -65,6 +65,7 @@
     pkgs.opentofu
     pkgs.musl
     pkgs.gcc
+    pkgs.zip
 
     # Node
     pkgs.nodejs # Base Node.js
