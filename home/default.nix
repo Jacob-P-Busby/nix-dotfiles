@@ -88,6 +88,7 @@
     pkgs.terraform-ls
 
     pkgs.go
+    pkgs.gopls
   ];
 
   home.sessionVariables = { EDITOR = "hx"; };
