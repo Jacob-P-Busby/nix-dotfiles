@@ -62,6 +62,7 @@
     pkgs.go-task # Better make
     pkgs.lazygit
     pkgs.awscli2
+    pkgs.aws-sam-cli
     pkgs.opentofu
     pkgs.musl
     pkgs.gcc
