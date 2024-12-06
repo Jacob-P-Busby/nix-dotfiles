@@ -85,6 +85,8 @@
     # Rust is handled by rustup
 
     pkgs.terraform-ls
+
+    pkgs.go
   ];
 
   home.sessionVariables = { EDITOR = "hx"; };
