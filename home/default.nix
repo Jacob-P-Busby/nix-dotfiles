@@ -63,6 +63,7 @@
     pkgs.lazygit
     pkgs.awscli2
     pkgs.aws-sam-cli
+    pkgs.wrangler
     pkgs.cargo-lambda
     pkgs.opentofu
     pkgs.musl
